@@ -1,12 +1,14 @@
 import { useState } from "react";
 import signInWithEmailAndPassword from "../utility/SignIn";
 import { useAuthContext } from "../hooks/useAuthContext";
-import { BASE_URL } from "../utility/constants";
+import { BASE_URL } from "../utility/Constants";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-const loginUrl = BASE_URL + "admin/login";
+const loginUrl = BASE_URL + "user";
 
 export const useLogin = () => {
+  const navigate = useNavigate();
   const { dispatch } = useAuthContext();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -22,13 +24,17 @@ export const useLogin = () => {
           Authorization: token,
         },
       });
+
+      console.log(token, response.data);
       if (response.status === 200) {
         dispatch({
           type: "SIGNIN",
           payload: {
             token: token,
+            user: response.data,
           },
         });
+        navigate("/");
       } else {
         throw new Error("Unauthorized");
       }

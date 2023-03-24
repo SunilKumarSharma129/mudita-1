@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { BASE_URL } from "../utility/constants";
+import { BASE_URL } from "../utility/Constants";
 import { useAuthContext } from "./useAuthContext";
 
 export const usePost = () => {
@@ -8,13 +8,13 @@ export const usePost = () => {
   const [postError, setPostError] = useState(null);
   const { user } = useAuthContext();
 
-  const post = async (endpoint, body) => {
+  const post = async (endpoint, body, register) => {
     try {
       setPosting(true);
       setPostError(null);
       const response = await axios.post(BASE_URL + endpoint, body, {
         headers: {
-          Authorization: user.token,
+          Authorization: register ? "" : user.token,
         },
       });
       if (response.status === 200) return true;

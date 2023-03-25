@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Survey from './pages/Survey';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Route path="/" element={<Homepage />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register/>} />
+          <Route path="/Survey" element={<Survey/>} />
         </Routes>
       </div>
     </BrowserRouter>

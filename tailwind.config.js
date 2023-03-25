@@ -11,7 +11,8 @@ module.exports = {
       'custom-light-green': '#d8f2d3',
       'new-green': '#9bd59e',
       'hover-green': '#325343',
-      'plum': '#f7f0e6'
+      'plum': '#f7f0e6',
+      'snow': '#fffcf6'
     },
   },
   plugins: [],

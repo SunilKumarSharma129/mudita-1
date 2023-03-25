@@ -381,7 +381,7 @@ const SurveyComp=()=>
     }
 
     return(
-        <div className='survey bg-snow justify-center h-screen flex items-center px-80'>
+        <div className='survey bg-snow justify-center h-screen flex items-center'>
             {showTotal ? (
                 <div>
                     Thank you!
@@ -393,17 +393,17 @@ const SurveyComp=()=>
             :(
         <>
         
-        <div className='bg-lavender h-96 w-full positon-absolute '>
-        <div className='heading text-4xl text-center'>
-            <h1>Help us match you to the perfect therapist</h1>
+        <div className='bg-lavender h-96 w-full positon-absolute px-56'>
+        <div className='heading text-5xl tracking-wide text-center'>
+            Help us match you to the <span className=' text-new-green'>right therapist</span>
         </div>
-        <div className='para text-center'>
+        <div className='para text-center my-9 px-20'>
             <p>Please fill out this short questionnaire to provide some background information 
                 about you and the issues you'd like to deal with in therapy. It would help us 
                 match you with the most suitable therapist for you. Your answers will also give
                 this therapist a good starting point in getting to know you.</p>
         </div>
-        <div className='shadow-lg'>
+        <div className='shadow-lg bg-white'>
         <div className='question '>
             
             <div className='quesText text-2xl'>

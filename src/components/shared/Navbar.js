@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="md:pb-5 navbar">
-      <nav className="fixed inset-x-0 shadow-md top-0 z-20 px-2 text-sm border-gray-200 bg-white">
+      <nav className="fixed opacity-100 inset-x-0 shadow-md top-0 z-20 px-2 text-sm  bg-white">
         <div className="flex flex-wrap items-center justify-between  mx-5 sm:mx-14">
           <Link to="/" className="flex">
             <img
@@ -46,7 +46,6 @@ const Navbar = () => {
               active ? "" : "hidden"
             }   w-full lg:inline-flex lg:flex-grow lg:w-auto mt-4`}
           >
-            =
             {user ? (
               <div className="flex flex-row items-start w-full lg:ml-auto lg:w-auto lg:h-auto">
                 <h3 className="font-bold text-xl text-custom-green ">

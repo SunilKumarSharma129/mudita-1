@@ -3,7 +3,7 @@ import React from "react";
 const Roadmap = () => {
   return (
     <div>
-      <div className="container bg-gray-200 mx-auto w-full h-full">
+      <div className="container mx-auto w-full h-full">
         <div className="relative wrap overflow-hidden p-5 md:p-10 lg:p-10 xl:p-10 2xl:p-10 h-full">
           <div className="border-2-2 absolute border-custom-green h-full border left-1/2"></div>
           <div className="mb-8 flex justify-between items-center w-full right-timeline">
@@ -15,11 +15,12 @@ const Roadmap = () => {
               <img
                 className=" w-1/3 h-1/3 invisible md:visible lg:visible xl:visible 2xl:visible"
                 alt="register image"
-                src="/register.svg"
+                src="/register.png"
               ></img>
               <h3 className="mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
                 Register With Us
               </h3>
+              <p>Register to have your symptoms analyzed.</p>
             </div>
           </div>
 
@@ -30,13 +31,16 @@ const Roadmap = () => {
             </div>
             <div className="order-1 w-5/12 md:px-3 md:py-6 lg:px-3 lg:py-6 xl:px-3 xl:py-6 2xl:px-3 2xl:py-6">
               <img
-                className=" w-1/3 h-1/3 invisible md:visible lg:visible xl:visible 2xl:visible"
+                className=" max-w-lg ml-auto w-1/3 h-1/3 invisible md:visible lg:visible xl:visible 2xl:visible"
                 alt="survey image"
                 src="/bookAppointment.svg"
               ></img>
-              <h3 className="mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
+              <div className="text-right">
+              <h3 className=" mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
                 Take A Survey
               </h3>
+              <p>Answer some questions related to your mental health to get better understanding of it.</p>
+              </div>
             </div>
           </div>
 
@@ -54,6 +58,7 @@ const Roadmap = () => {
               <h3 className="mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
                 Get recommendation
               </h3>
+              <p>Based on your answers, get a recommendation of doctors to help you.</p>
             </div>
           </div>
 
@@ -64,13 +69,16 @@ const Roadmap = () => {
             </div>
             <div className="order-1 bg-white w-5/12 md:px-3 md:py-6 lg:px-3 lg:py-6 xl:px-3 xl:py-6 2xl:px-3 2xl:py-6">
               <img
-                className=" w-1/3 h-1/3 invisible md:visible lg:visible xl:visible 2xl:visible"
+                className="max-w-lg ml-auto w-1/3 h-1/3 invisible md:visible lg:visible xl:visible 2xl:visible"
                 alt="appointment image"
                 src="/bookAppointment.svg"
               ></img>
+            <div className="text-right">
               <h3 className="mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
                 Book Appointment
               </h3>
+              <p>Finally book an appointment with the desired doctor and get yourself tested.</p>
+            </div>
             </div>
           </div>
         </div>

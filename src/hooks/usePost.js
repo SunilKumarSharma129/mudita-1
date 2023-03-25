@@ -10,6 +10,7 @@ export const usePost = () => {
 
   const post = async (endpoint, body, register) => {
     try {
+      console.log(body);
       setPosting(true);
       setPostError(null);
       const response = await axios.post(BASE_URL + endpoint, body, {
@@ -17,7 +18,8 @@ export const usePost = () => {
           Authorization: register ? "" : user.token,
         },
       });
-      if (response.status === 200) return true;
+      console.log(response);
+      if (response.status === 200) return response.data;
       else return false;
     } catch (err) {
       console.log(err);

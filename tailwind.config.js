@@ -12,7 +12,8 @@ module.exports = {
       'new-green': '#9bd59e',
       'hover-green': '#325343',
       'plum': '#f7f0e6',
-      'snow': '#fffcf6'
+      'snow': '#fffcf6',
+      'yellow': '#e3a008'
     },
   },
   plugins: [],

@@ -2,17 +2,22 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/shared/Navbar";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useFetch } from "../hooks/useFetch";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useCalendlyEventListener, PopupButton } from "react-calendly";
 import { usePost } from "../hooks/usePost";
+import { disease } from "../utility/Constants";
 
 const Doctor = () => {
+  const location = useLocation();
+  const propsData = location.state;
   const { user } = useAuthContext();
   const { loading, error, fetch } = useFetch();
   const [data, setData] = useState([]);
   const navigate = useNavigate();
   const { posting, post, postError } = usePost();
   const [doc, setDoc] = useState(null);
+
+  console.log(disease[Math.round(propsData.prediction)]);
 
   useCalendlyEventListener({
     onEventScheduled: (e) => {

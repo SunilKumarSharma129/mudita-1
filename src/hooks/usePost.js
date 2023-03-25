@@ -19,7 +19,7 @@ export const usePost = () => {
         },
       });
       console.log(response);
-      if (response.status === 200) return true;
+      if (response.status === 200) return response.data;
       else return false;
     } catch (err) {
       console.log(err);

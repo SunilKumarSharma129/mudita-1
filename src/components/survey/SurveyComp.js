@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const SurveyComp=()=>
 {
@@ -358,10 +359,10 @@ const SurveyComp=()=>
     {
     	response.push(e.target.innerText);
 
-        if(isChosen)
+       /* if(isChosen)
         {
             setTotalques(totalques+1);
-        }
+        }*/
 
         const nextQues = currQues+1;
         if(nextQues < Surveyques.length)
@@ -373,49 +374,47 @@ const SurveyComp=()=>
         }
     }
 
-    const resetSurvey=()=>
-    {
-        setCurrQues(0);
-        setTotalques(0);
-        setShowTotal(false);
-    }
-
     return(
         <div className='survey bg-snow justify-center h-screen flex items-center'>
             {showTotal ? (
                 <div>
-                    Thank you!
-                    <>
-                    <button type = "submit" onClick={resetSurvey}>Retake the survey</button>
-                    </>
+                    <div className='text-xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-custom-green'>Thank you!</div>
+                    
+                    <div>
+                    <Link to="/Doctor"><button className='w-full bg-new-green hover:bg-hover-green hover:text-white my-2 rounded-full p-3'>Continue</button></Link>
+                    </div>
                 </div>
             )
             :(
         <>
         
-        <div className='bg-lavender h-96 w-full positon-absolute px-56'>
+        <div className='h-96 w-full  bg-lavender'>
+        <div className='px-3 md:px-56 lg:px-56 xl:px-56 2xl:px-56'>
         <div className='heading text-5xl tracking-wide text-center'>
             Help us match you to the <span className=' text-new-green'>right therapist</span>
         </div>
-        <div className='para text-center my-9 px-20'>
+        <div className='para text-center my-2 md:my-9 lg:my-9 xl:my-9 2xl:my-9 px-1 md:px-20 lg:px-20 xl:px-20 2xl:px-20'>
             <p>Please fill out this short questionnaire to provide some background information 
                 about you and the issues you'd like to deal with in therapy. It would help us 
                 match you with the most suitable therapist for you. Your answers will also give
                 this therapist a good starting point in getting to know you.</p>
         </div>
-        <div className='shadow-lg bg-white'>
+        </div>
+        <div className='px-2 md:px-96 lg:px-96 xl:px-96 2xl:px-96'>
+        <div  className='shadow-lg h-max bg-white p-9'>
         <div className='question '>
             
-            <div className='quesText text-2xl'>
+            <div className='quesText text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl mx-auto'>
                 {Surveyques[currQues].Question}
             </div>
         </div>
 
-        <div className='answer text-xl flex flex-col'>
+        <div className='answer mt-3 text-start text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl flex flex-col'>
             {Surveyques[currQues].AnswerText.map((answer) =>
             (
-                <button onClick={(e)=>handleResponse(e)}>{answer.Answer}</button>
+                <button className='bg-new-green hover:bg-hover-green hover:text-white my-2 rounded-full p-3' onClick={(e)=>handleResponse(e)}>{answer.Answer}</button>
             ))}
+        </div>
         </div>
         </div>
         </div>

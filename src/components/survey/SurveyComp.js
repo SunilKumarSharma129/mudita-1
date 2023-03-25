@@ -388,19 +388,19 @@ const SurveyComp=()=>
             :(
         <>
         
-        <div className='h-96 w-full  bg-lavender'>
-        <div className='px-3 md:px-56 lg:px-56 xl:px-56 2xl:px-56'>
-        <div className='heading text-5xl tracking-wide text-center'>
+        <div className='lg:h-84 h-96 w-full  bg-lavender'>
+        <div className='px-3 md:px-20 lg:px-20 xl:px-56 2xl:px-56'>
+        <div className='heading text-2xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl tracking-wide text-center'>
             Help us match you to the <span className=' text-new-green'>right therapist</span>
         </div>
-        <div className='para text-center my-2 md:my-9 lg:my-9 xl:my-9 2xl:my-9 px-1 md:px-20 lg:px-20 xl:px-20 2xl:px-20'>
+        <div className='para text-md md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-center my-2 md:my-9 lg:my-9 xl:my-9 2xl:my-9 px-1 md:px-20 lg:px-20 xl:px-20 2xl:px-20'>
             <p>Please fill out this short questionnaire to provide some background information 
                 about you and the issues you'd like to deal with in therapy. It would help us 
                 match you with the most suitable therapist for you. Your answers will also give
                 this therapist a good starting point in getting to know you.</p>
         </div>
         </div>
-        <div className='px-2 md:px-96 lg:px-96 xl:px-96 2xl:px-96'>
+        <div className='px-2 md:px-44 lg:px-56 xl:px-96 2xl:px-96'>
         <div  className='shadow-lg h-max bg-white p-9'>
         <div className='question '>
             

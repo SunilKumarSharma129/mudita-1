@@ -19,7 +19,7 @@ const Banner = () => {
                 comes the psychological help you need: Our survey can help you
                 figure out your mental health and understand it better.
               </p>
-              <Link to="/Doctor">
+              <Link to="/Survey">
                 <button className="mt-10  text-lg hover:bg-hover-green bg-custom-green p-4 text-white text-bold rounded-lg">
                   Take a survey now
                 </button>

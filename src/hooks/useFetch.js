@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { BASE_URL } from "../utility/constants";
+import { BASE_URL } from "../utility/Constants";
 import { useAuthContext } from "./useAuthContext";
 
 export const useFetch = () => {

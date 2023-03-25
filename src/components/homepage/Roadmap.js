@@ -20,6 +20,7 @@ const Roadmap = () => {
               <h3 className="mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
                 Register With Us
               </h3>
+              <p>Register to have your symptoms analyzed.</p>
             </div>
           </div>
 
@@ -37,6 +38,7 @@ const Roadmap = () => {
               <h3 className="mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
                 Take A Survey
               </h3>
+              <p>Answer some questions related to your mental health to get better understanding of it.</p>
             </div>
           </div>
 
@@ -54,6 +56,7 @@ const Roadmap = () => {
               <h3 className="mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
                 Get recommendation
               </h3>
+              <p>Based on your answers, get a recommendation of doctors to help you.</p>
             </div>
           </div>
 
@@ -71,6 +74,7 @@ const Roadmap = () => {
               <h3 className="mb-2 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 font-bold text-sm lg:text-xl xl:text-xl 2xl:text-xl md:text-xl">
                 Book Appointment
               </h3>
+              <p>Finally book an appointment with the desired doctor and get yourself tested.</p>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Navbar = () => {
-  const { user } = useAuthContext();
+  const { user, dispatch } = useAuthContext();
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -58,7 +58,12 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="mx-4 text-custom-green w-6 h-6"
+                  className="mx-4 text-custom-green w-6 h-6 cursor-pointer"
+                  onClick={() => {
+                    dispatch({
+                      type: "SIGNOUT",
+                    });
+                  }}
                 >
                   <path
                     strokeLinecap="round"

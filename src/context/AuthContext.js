@@ -5,8 +5,10 @@ export const AuthContext = createContext();
 const authReducer = (state, action) => {
   switch (action.type) {
     case "SIGNIN":
+      localStorage.setItem("user", JSON.stringify(action.payload));
       return { user: action.payload };
     case "SIGNOUT":
+      localStorage.removeItem("user");
       return { user: null };
     default:
       return null;

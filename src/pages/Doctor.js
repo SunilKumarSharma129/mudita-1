@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/shared/Navbar";
+import { useAuthContext } from "../hooks/useAuthContext";
 import { useFetch } from "../hooks/useFetch";
 import { Link } from "react-router-dom";
 
 const Doctor = () => {
+  const { user } = useAuthContext();
   const { loading, error, fetch } = useFetch();
   const [data, setData] = useState([]);
 
@@ -12,9 +14,7 @@ const Doctor = () => {
       console.log(res);
       setData(res);
     });
-  }, []);
-
-  console.log();
+  }, [user]);
 
   return(
     <div>

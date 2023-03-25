@@ -25,8 +25,14 @@ export const useLogin = () => {
         },
       });
 
-      console.log(token, response.data);
       if (response.status === 200) {
+        localStorage.setItem(
+          "user",
+          JSON.stringify({
+            token: token,
+            user: response.data,
+          })
+        );
         dispatch({
           type: "SIGNIN",
           payload: {

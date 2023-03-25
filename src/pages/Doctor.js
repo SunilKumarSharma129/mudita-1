@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useAuthContext } from "../hooks/useAuthContext";
 import { useFetch } from "../hooks/useFetch";
 
 const Doctor = () => {
+  const { user } = useAuthContext();
   const { loading, error, fetch } = useFetch();
   const [data, setData] = useState([]);
 
@@ -10,9 +12,7 @@ const Doctor = () => {
       console.log(res);
       setData(res);
     });
-  }, []);
-
-  console.log();
+  }, [user]);
 
   return <div>Doctor</div>;
 };

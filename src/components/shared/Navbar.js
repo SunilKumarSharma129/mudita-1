@@ -11,13 +11,13 @@ const Navbar = () => {
   
   return (
     <div className="md:pb-5 navbar">
-      <nav className="fixed inset-x-0 top-0 z-20 px-2 text-sm border-gray-200 bg-white">
+      <nav className="fixed inset-x-0 shadow-md top-0 z-20 px-2 text-sm border-gray-200 bg-white">
         <div className="flex flex-wrap items-center justify-between  mx-5 sm:mx-14">
           <Link to="/" className="flex">
             <img
               src="/logo.png"
               alt="Mudita Logo"
-              className="w-24 h-24 md:w-24 md:h-24 md:pt-0"
+              className="w-16 h-16 md:w-16 md:h-16 md:pt-0"
             />
           </Link>
           <button

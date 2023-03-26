@@ -1,7 +1,7 @@
 
 
 <div style="text-align: center;">
-<img src="/home/amitrix/Desktop/Hack36-Mudita/mudita/public/logo.png" height=300 />
+<img src="public/logo.png" height=300 />
 
 <h3 style="font-weight: bold; font-family: Arial, sans-serif;">Take the first step towards a healthier mind and happier you</h3>
 
@@ -43,8 +43,8 @@ Prerequisites
 * python 3
 * jupyter notebook
 
-Clone our github repository:
-``git clone https://github.com/mitrukahitesh/mudita.git`` 
+Clone our github repository: <br>
+``git clone https://github.com/mitrukahitesh/mudita.git``      <br>
 ``git clone https://github.com/mitrukahitesh/mudita-server.git`` 
 
 Also add .env variables.
@@ -78,16 +78,16 @@ Backend-Server Github repository : https://github.com/mitrukahitesh/mudita-serve
 ## Features
 <ol>
 <div style="display: flex;">
-  <img src="public/screen_shots/without-loggedin-mainpage.png" style="width: 50%;" />
-  <img src="public/screen_shots/login-page.png" style="width: 50%;" />
+  <img src="public/screen_shots/without-loggedin-mainpage.png" style="width: 45%;" />
+  <img src="public/screen_shots/login-page.png" style="width: 45%;" />
 </div>
 <div style="display: flex;">
-  <img src="public/screen_shots/with-loggedIn.png" style="width: 50%;" />
-  <img src="public/screen_shots/question-page.png" style="width: 50%;" />
+  <img src="public/screen_shots/with-loggedIn.png" style="width: 45%;" />
+  <img src="public/screen_shots/question-page.png" style="width: 45%;" />
 </div>
 <div style="display: flex;">
-  <img src="public/screen_shots/result-and-doctor-suggestions.png" style="width: 50%;" />
-  <img src="public/screen_shots/booked-slot.png" style="width: 50%;" />
+  <img src="public/screen_shots/result-and-doctor-suggestions.png" style="width: 45%;" />
+  <img src="public/screen_shots/booked-slot.png" style="width: 45%;" />
 </div>
 </ol>
 

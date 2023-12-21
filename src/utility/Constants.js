@@ -1,4 +1,4 @@
-export const BASE_URL = "https://api-mudita.up.railway.app/";
+export const BASE_URL = "https://localhost:3000/";
 
 export const surveyQuestions = [
   {
